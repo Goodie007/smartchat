@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 
+#mobile-nav {
+  display: none;
+}
+
 @viewport {
   width: device-width;
   zoom: 1.1;
@@ -122,6 +126,7 @@ h3 {
 }
 
 .message-form {
+  align-items: 'center';
   padding-top: 560px;
 }
 
@@ -129,4 +134,8 @@ h3 {
   height: 30px;
   width: 70%;
   border-radius: 20px;
+}
+
+.image-button {
+  height: 30px;
 }
