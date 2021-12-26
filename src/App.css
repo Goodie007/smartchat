@@ -139,3 +139,27 @@ h3 {
 .image-button {
   height: 30px;
 }
+
+.fig {
+  background-color: #282c34;
+  height: 500px;
+  width: 500px;
+  justify-content: center;
+}
+
+.images {
+  height: 250px;
+  width: 250px;
+  border-radius: 250px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.section {
+  display: grid;
+  @media (min-width: 768px) {
+    .md\: grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+}
