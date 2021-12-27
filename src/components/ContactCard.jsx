@@ -7,12 +7,12 @@ import Model3 from '../images/Model3.jpeg';
 
 export default function ContactCard({ contactList }){
     return(
-        
-        {contactList?.map((contact, index) => (
-            <div className='inputField'>
-            <figure className='fig' key={index}>
-               <img src={contact.picture.large} alt="user" className='images'/> 
-               <figcaption>
+       
+        <div className='inputField'>
+            {contactList?.map((contact, index) => (
+                <figure className='fig' key={index}>
+                   <img src={contact.picture.large} alt="user" className='images'/> 
+                <figcaption>
                    <p>
                        <span>username: </span>{contact.username}
                    </p>
@@ -20,11 +20,12 @@ export default function ContactCard({ contactList }){
                        <span> email: </span>{contact.email}
                    </p>
                </figcaption>
-            </figure>
+               </figure>
             
             
+            ))}
+
         </div>
-        ))}
 
     )
 
