@@ -7,7 +7,7 @@ import ContactCard from './ContactCard';
 
 
 export default function Contact(){
-    const url = ""
+    const url = "https://randomuser.me/api/"
     const { isLoading, data, error } = useFetch(url+'?results=200')
 
     const [ contactList, setContactList ] = useState()
@@ -21,8 +21,8 @@ export default function Contact(){
                 const username = `${contact.username}`
 
                 if (queryString.length === 1) {
-                    const firstLetter = username.charAt(0).toLowerCase()
-                    return username === queryString
+                    const user = username.charAt(0).toLowerCase()
+                    return user === queryString
                 }
                 else {
                     return username.toLowerCase().includes(queryString)

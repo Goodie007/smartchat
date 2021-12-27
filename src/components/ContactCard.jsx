@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Model3 from '../images/Model3.jpeg';
+
 
 
 
